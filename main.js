@@ -51,9 +51,8 @@ bienvenida();
 
 const personajeElejidoPorUsuario = prompt("Ingrese a quien desea conocer. /n -Anakin Skywalker /n -Obi-Wan Kenobi /n -Darth Sidious")
  
-const personaje = misPersonajes.find((anakin) => personaje.nombre === personajeElejidoPorUsuario);
-
-alert("personaje");
+const personajeEncontrado = misPersonajes.find( item => item.nombre === personajeElejidoPorUsuario);
+alert(personajeEncontrado);
 
 
 function despedida() {
